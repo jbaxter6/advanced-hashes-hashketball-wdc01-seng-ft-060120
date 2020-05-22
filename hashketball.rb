@@ -209,11 +209,14 @@ def player_stats(players_name)
 end  
 
 def big_shoe_rebounds
+  big_shoe = 0
+  rebounds= 0
   game_hash.each do |key, value|
     #binding.pry
     value.each do |inner_key, inner_value|
     binding.pry
-      if inner_value[:shoe] 
+      if inner_value[:shoe] > big_shoe
+        inner_value[:shoe] = big_shoe
     end
   end
 end
