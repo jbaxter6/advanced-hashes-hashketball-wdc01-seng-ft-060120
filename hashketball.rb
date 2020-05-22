@@ -199,13 +199,12 @@ def player_stats(players_name)
       if inner_key == :players
         inner_value.each do |player|
         #binding.pry
-        if player[:player_name] == players_name
+          if player[:player_name] == players_name
           player.delete(:player_name)
+          end
         end    
       end
     end
   end
   return player
 end  
-  
-      
