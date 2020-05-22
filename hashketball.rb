@@ -209,3 +209,10 @@ def player_stats(players_name)
 end  
 
 def big_shoe_rebounds
+  game_hash.each do |key, value|
+    #binding.pry
+    value.each do |inner_key, inner_value|
+    binding.pry
+    end
+  end
+end
