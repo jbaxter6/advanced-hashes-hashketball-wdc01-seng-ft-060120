@@ -198,7 +198,7 @@ def player_stats(players_name)
       #binding.pry
       if inner_key == :players
         inner_value.each do |player|
-        binding.pry
+        #binding.pry
         if player[:player_name] == players_name
           player.delete(:player_name)
         end    
