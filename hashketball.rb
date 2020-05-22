@@ -197,7 +197,7 @@ def player_stats(players_name)
     value[:players].each do |player|
       # binding.pry
       if player[:player_name] == players_name
-        return player[:points]
+        player.delete()
       end
     end
   end
