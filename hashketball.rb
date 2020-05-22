@@ -200,7 +200,6 @@ def player_stats(players_name)
         inner_value.each do |player|
         #binding.pry
           if player[:player_name] == players_name
-          player.delete(:player_name)
           return player
           end
         end    
