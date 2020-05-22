@@ -213,7 +213,7 @@ def big_shoe_rebounds
     #binding.pry
     value.each do |inner_key, inner_value|
     binding.pry
-      inner
+      i
     end
   end
 end
