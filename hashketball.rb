@@ -195,11 +195,15 @@ def player_stats(players_name)
   game_hash.each do |key, value|
     #binding.pry
     value.each do |inner_key, inner_value|
-      binding.pry
+      #binding.pry
       if inner_key == :players
-        inner_value.each do
+        inner_value.each do |player|
+        binding.pry
+        end    
       end
     end
+  end
+end  
   
 end
       
