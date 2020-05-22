@@ -194,11 +194,8 @@ end
 def player_stats(players_name)
   game_hash.each do |key, value|
     binding.pry
-    value[:players].each do |player|
-      # binding.pry
-      if player[:player_name] == players_name
-        player.delete(:player_name)
-        return player
+    value.each do |player|
+      
       end
     end
   end
