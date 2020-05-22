@@ -201,11 +201,10 @@ def player_stats(players_name)
         #binding.pry
           if player[:player_name] == players_name
           player.delete(:player_name)
-          
+          return player
           end
         end    
       end
     end
   end
-  return player
 end  
